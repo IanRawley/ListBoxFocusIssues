@@ -18,8 +18,8 @@
 		<ListBox Grid.Row="1" Grid.Column="0" DataContext="{Binding ViewModel}"
 		         ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}" 
 				 SelectionMode="AlwaysSelected, Single"/>
-		<ListBox x:Name="UnboundListBox" Grid.Row="1" Grid.Column="1" DataContext="{Binding ViewModel}"
+		<ListBox  Grid.Row="1" Grid.Column="1" DataContext="{Binding ViewModel}"
 				 ItemsSource="{Binding Items}" SelectionMode="AlwaysSelected, Single"/>
-		<TextBlock Text="{Binding #UnboundListBox.SelectedItem}" Grid.Row="0" Grid.Column="1"/>
+		
 	</Grid>
 </UserControl>
