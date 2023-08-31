@@ -64,9 +64,10 @@ public class BabyViewModel : ViewModelBase
     private void RebuildList()
     {
         _itemsSource.Clear();
-        for (int i = 0; i < 20; i++)
+        int basePoint = Random.Shared.Next(1, 100);
+        for (int i = basePoint; i < basePoint + 20; i++)
         {
-            _itemsSource.Add(Random.Shared.Next(1, 100).ToString());
+            _itemsSource.Add(i.ToString());
         }
     }
 }
